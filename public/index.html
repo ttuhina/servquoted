@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Daily Calm</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🌿 Daily Calm</h1>
+    <p id="quote">Loading a calming thought...</p>
+    <button onclick="loadQuote()">Refresh</button>
+  </div>
+  <script>
+    async function loadQuote() {
+      const res = await fetch('/quote');
+      const data = await res.json();
+      document.getElementById('quote').textContent = data.quote;
+    }
+    loadQuote();
+  </script>
+</body>
+</html>
