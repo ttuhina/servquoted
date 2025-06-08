@@ -2,8 +2,7 @@
 
 A simple Node.js server that serves calming quotes with a relaxing frontend.
 
-![Preview](screenshot.png)
-
+![Screenshot](https://github.com/ttuhina/servquoted/blob/main/Screenshot.png?raw=true)
 ---
 
 ## Features
